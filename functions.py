@@ -73,7 +73,7 @@ def readRead(path,dc=0, ProtonDoseCorrection=False, factorProtonDose=10000):
     else:
         raise OSError('the path does not exist')
     
-def read_data(path_im,path_ob,path_dc, ProtonDoseCorrection=False,factorProtonDose=10000):
+def read_data(path_im,path_ob,path_dc=False, ProtonDoseCorrection=False,factorProtonDose=10000):
     """
     Function to read data from the specified folders, it can read FITS, TIFF and HDF.
 
